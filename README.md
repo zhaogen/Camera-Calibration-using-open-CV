@@ -21,7 +21,9 @@ Intrinsic Matrix (K) - 내부 파라미터:$f_x$ (가로 초점 거리): 866.03$
 
 원본(original)
 
-<img width="1920" height="1030" alt="image" src="https://github.com/user-attachments/assets/8087bb73-2881-4341-8201-68900afdb52f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17e687ee-e033-4e50-bc4c-b11b3abc6e83" />
+
+
 
 3.2 결과 비교 (Demo)
 주요 확인 포인트: 아이폰 광각 특유의 화면 외곽 부분 휘어짐 현상이 보정 후 직선으로 곧게 펴진 것을 확인할 수 있음.
