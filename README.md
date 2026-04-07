@@ -6,10 +6,13 @@ Camera Calibration & Lens Distortion Correction
 
 환경: Python 3.12 (Anaconda), OpenCV 4.x
 
-2. 카메라 캘리브레이션 (Camera Calibration)2.1 수행 과정A4 용지에 출력된 $9 \times 6$ 체스보드(내부 교차점 $8 \times 5$)를 다양한 각도와 거리에서 촬영함.cv2.findChessboardCorners를 사용하여 각 프레임의 코너 좌표를 검출함.검출된 2D 이미지 좌표와 3D 공간 좌표를 매칭하여 카메라 행렬을 산출함.
+2. 카메라 캘리브레이션 (Camera Calibration)
+2.1 수행 과정A4 용지에 출력된 $9 \times 6$ 체스보드(내부 교차점 $8 \times 5$)를 다양한 각도와 거리에서 촬영함.cv2.findChessboardCorners를 사용하여 각 프레임의 코너 좌표를 검출함.검출된 2D 이미지 좌표와 3D 공간 좌표를 매칭하여 카메라 행렬을 산출함.
+   
 2.2 산출 결과수행 결과 얻은 카메라의 고유 파라미터는 다음과 같습니다.
   RMS Error (평균 제곱근 오차): 1.039
 Intrinsic Matrix (K) - 내부 파라미터:$f_x$ (가로 초점 거리): 866.03$f_y$ (세로 초점 거리): 866.65$c_x$ (주점 X좌표): 534.08$c_y$ (주점 Y좌표): 958.30Distortion Coefficients (왜곡 계수):[-0.0116747, -0.00834635, -0.00071855, -0.00183375, 0.00951483]
+
 3. 렌즈 왜곡 보정 (Lens Distortion Correction)
 3.1 보정 방법
 위 단계에서 구한 mtx(Intrinsic Matrix)와 dist(Distortion Coefficients)를 cv2.undistort 함수에 적용함.
